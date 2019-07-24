@@ -27,7 +27,7 @@ formVar.addEventListener('submit', (e) => {
                 return weatherDisplay.textContent = data.error;
             }
             locationDisp.textContent = `location: ${data.location}`
-            weatherDisplay.textContent = `Summary : ${data.summary} and temperature is ${data.temp} degree`;
+            weatherDisplay.textContent = `Summary : ${data.summary} and temperature is ${data.temp} degree and the Highest temp is ${data.highTemp} and lowest temp is ${data.lowTemp}`;
         })
     })
 })

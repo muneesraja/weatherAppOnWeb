@@ -47,7 +47,7 @@ app.get('/weather', (req, res) => {
             if(error){
                 return res.send({error})
             }
-            res.send({summary:responseWeather.summary, temp:responseWeather.temp, location:response.location})
+            res.send({summary:responseWeather.summary, temp:responseWeather.temp, location:response.location, highTemp:responseWeather.higherTemp, lowTemp:responseWeather.lowerTemp})
         })
     })    
 })

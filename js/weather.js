@@ -22,7 +22,7 @@ const findWeather = (latitude, longitude, callback) => {
         else if(response.body.error){
             callback('The given location is invalid', undefined)
         }else{
-            callback(undefined, {summary:response.body.currently.summary, temp:response.body.currently.temperature})
+            callback(undefined, {summary:response.body.currently.summary, temp:response.body.currently.temperature, higherTemp:response.body.daily.data[0].apparentTemperatureHigh, lowerTemp:response.body.daily.data[0].apparentTemperatureLow})
         }
     })
 }
