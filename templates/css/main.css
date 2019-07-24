@@ -1,0 +1,35 @@
+section{
+    width: 700px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 1.5rem;
+    padding-left: 100px;
+}
+ul li{
+    width: 80px;
+}
+a{
+    text-decoration: none;
+    color: rgb(56, 46, 46, 0.8);
+}
+img{
+    padding-left: 250px;
+}
+p{
+    padding: 0 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+form{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
